@@ -11,10 +11,10 @@ export default function Sidebar() {
   ];
 
   return (
-    <div>
+    <div className="sidebar">
       <div>logo or image here</div>
       <h2>Ej Sadiarin</h2>
-      <ul>
+      <ul className="sidebar-selection">
         {Menus.map((menu) => (
           <li key={menu.title}>{menu.title}</li>
         ))}
