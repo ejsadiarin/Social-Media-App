@@ -22,7 +22,9 @@ export default function Navbar() {
           <>
             <p>Welcome, {user?.displayName}</p>
             <img src={user?.photoURL || ''} alt="profile" />
-            <button onClick={userSignout}>Log out</button>
+            <button type="button" onClick={userSignout}>
+              Log out
+            </button>
           </>
         )}
       </div>
